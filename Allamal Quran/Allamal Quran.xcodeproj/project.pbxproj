@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E42FBF662959677A271854F /* Pods_Allamal_Quran.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BC4638957DE8CCEE9317EF /* Pods_Allamal_Quran.framework */; };
+		27DED6FDA039E00CECDA2312 /* Pods_Allamal_QuranUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8ED2ECF8D930A37195B3B7C /* Pods_Allamal_QuranUITests.framework */; };
+		872C35BB8591DEE390914F09 /* Pods_Allamal_QuranTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 588963C699E39542414A4929 /* Pods_Allamal_QuranTests.framework */; };
+		E2C5C7B91E47DBAF00252142 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C7B81E47DBAF00252142 /* AppDelegate.swift */; };
+		E2C5C7BB1E47DBAF00252142 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C7BA1E47DBAF00252142 /* FirstViewController.swift */; };
+		E2C5C7BD1E47DBAF00252142 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C7BC1E47DBAF00252142 /* SecondViewController.swift */; };
+		E2C5C7C01E47DBAF00252142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C5C7BE1E47DBAF00252142 /* Main.storyboard */; };
+		E2C5C7C21E47DBAF00252142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C5C7C11E47DBAF00252142 /* Assets.xcassets */; };
+		E2C5C7C51E47DBAF00252142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C5C7C31E47DBAF00252142 /* LaunchScreen.storyboard */; };
+		E2C5C7D01E47DBAF00252142 /* Allamal_QuranTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C7CF1E47DBAF00252142 /* Allamal_QuranTests.swift */; };
+		E2C5C7DB1E47DBAF00252142 /* Allamal_QuranUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C7DA1E47DBAF00252142 /* Allamal_QuranUITests.swift */; };
+		E2C5C7EA1E47DCB300252142 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E2C5C7E91E47DCB300252142 /* Podfile */; };
+		E2C5C7ED1E47DD4700252142 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2C5C7EC1E47DD4700252142 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2C5C7CC1E47DBAF00252142 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2C5C7AD1E47DBAE00252142 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2C5C7B41E47DBAF00252142;
+			remoteInfo = "Allamal Quran";
+		};
+		E2C5C7D71E47DBAF00252142 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2C5C7AD1E47DBAE00252142 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2C5C7B41E47DBAF00252142;
+			remoteInfo = "Allamal Quran";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		588963C699E39542414A4929 /* Pods_Allamal_QuranTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Allamal_QuranTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74604E87ED7B183EC30B6ED2 /* Pods-Allamal QuranUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allamal QuranUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Allamal QuranUITests/Pods-Allamal QuranUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7CA3F63F58ADBD6D575034F2 /* Pods-Allamal Quran.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allamal Quran.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Allamal Quran/Pods-Allamal Quran.debug.xcconfig"; sourceTree = "<group>"; };
+		A0BC4638957DE8CCEE9317EF /* Pods_Allamal_Quran.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Allamal_Quran.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8ED2ECF8D930A37195B3B7C /* Pods_Allamal_QuranUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Allamal_QuranUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C103BD66D580455A49C008F1 /* Pods-Allamal QuranTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allamal QuranTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Allamal QuranTests/Pods-Allamal QuranTests.release.xcconfig"; sourceTree = "<group>"; };
+		CD57E099032BA39D514C6D91 /* Pods-Allamal QuranUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allamal QuranUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Allamal QuranUITests/Pods-Allamal QuranUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E2C5C7B51E47DBAF00252142 /* Allamal Quran.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Allamal Quran.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2C5C7B81E47DBAF00252142 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2C5C7BA1E47DBAF00252142 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E2C5C7BC1E47DBAF00252142 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E2C5C7BF1E47DBAF00252142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2C5C7C11E47DBAF00252142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2C5C7C41E47DBAF00252142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2C5C7C61E47DBAF00252142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C5C7CB1E47DBAF00252142 /* Allamal QuranTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Allamal QuranTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2C5C7CF1E47DBAF00252142 /* Allamal_QuranTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Allamal_QuranTests.swift; sourceTree = "<group>"; };
+		E2C5C7D11E47DBAF00252142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C5C7D61E47DBAF00252142 /* Allamal QuranUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Allamal QuranUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2C5C7DA1E47DBAF00252142 /* Allamal_QuranUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Allamal_QuranUITests.swift; sourceTree = "<group>"; };
+		E2C5C7DC1E47DBAF00252142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C5C7E91E47DCB300252142 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		E2C5C7EC1E47DD4700252142 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Firebase/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F5DF7D47E2D9E7C8DB4F3EB2 /* Pods-Allamal QuranTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allamal QuranTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Allamal QuranTests/Pods-Allamal QuranTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8D92EC65CFE1786B76E8E3D /* Pods-Allamal Quran.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allamal Quran.release.xcconfig"; path = "Pods/Target Support Files/Pods-Allamal Quran/Pods-Allamal Quran.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2C5C7B21E47DBAF00252142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E42FBF662959677A271854F /* Pods_Allamal_Quran.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2C5C7C81E47DBAF00252142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				872C35BB8591DEE390914F09 /* Pods_Allamal_QuranTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2C5C7D31E47DBAF00252142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DED6FDA039E00CECDA2312 /* Pods_Allamal_QuranUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B8096180330CAD868F80296 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0BC4638957DE8CCEE9317EF /* Pods_Allamal_Quran.framework */,
+				588963C699E39542414A4929 /* Pods_Allamal_QuranTests.framework */,
+				B8ED2ECF8D930A37195B3B7C /* Pods_Allamal_QuranUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0329E9EA232BF2B23343665 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CA3F63F58ADBD6D575034F2 /* Pods-Allamal Quran.debug.xcconfig */,
+				F8D92EC65CFE1786B76E8E3D /* Pods-Allamal Quran.release.xcconfig */,
+				F5DF7D47E2D9E7C8DB4F3EB2 /* Pods-Allamal QuranTests.debug.xcconfig */,
+				C103BD66D580455A49C008F1 /* Pods-Allamal QuranTests.release.xcconfig */,
+				74604E87ED7B183EC30B6ED2 /* Pods-Allamal QuranUITests.debug.xcconfig */,
+				CD57E099032BA39D514C6D91 /* Pods-Allamal QuranUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E2C5C7AC1E47DBAE00252142 = {
+			isa = PBXGroup;
+			children = (
+				E2C5C7B71E47DBAF00252142 /* Allamal Quran */,
+				E2C5C7CE1E47DBAF00252142 /* Allamal QuranTests */,
+				E2C5C7D91E47DBAF00252142 /* Allamal QuranUITests */,
+				E2C5C7B61E47DBAF00252142 /* Products */,
+				E0329E9EA232BF2B23343665 /* Pods */,
+				7B8096180330CAD868F80296 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E2C5C7B61E47DBAF00252142 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2C5C7B51E47DBAF00252142 /* Allamal Quran.app */,
+				E2C5C7CB1E47DBAF00252142 /* Allamal QuranTests.xctest */,
+				E2C5C7D61E47DBAF00252142 /* Allamal QuranUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2C5C7B71E47DBAF00252142 /* Allamal Quran */ = {
+			isa = PBXGroup;
+			children = (
+				E2C5C7EB1E47DD1000252142 /* Firebase */,
+				E2C5C7E81E47DC9C00252142 /* Podfile */,
+				E2C5C7B81E47DBAF00252142 /* AppDelegate.swift */,
+				E2C5C7BA1E47DBAF00252142 /* FirstViewController.swift */,
+				E2C5C7BC1E47DBAF00252142 /* SecondViewController.swift */,
+				E2C5C7BE1E47DBAF00252142 /* Main.storyboard */,
+				E2C5C7C11E47DBAF00252142 /* Assets.xcassets */,
+				E2C5C7C31E47DBAF00252142 /* LaunchScreen.storyboard */,
+				E2C5C7C61E47DBAF00252142 /* Info.plist */,
+			);
+			path = "Allamal Quran";
+			sourceTree = "<group>";
+		};
+		E2C5C7CE1E47DBAF00252142 /* Allamal QuranTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2C5C7CF1E47DBAF00252142 /* Allamal_QuranTests.swift */,
+				E2C5C7D11E47DBAF00252142 /* Info.plist */,
+			);
+			path = "Allamal QuranTests";
+			sourceTree = "<group>";
+		};
+		E2C5C7D91E47DBAF00252142 /* Allamal QuranUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E2C5C7DA1E47DBAF00252142 /* Allamal_QuranUITests.swift */,
+				E2C5C7DC1E47DBAF00252142 /* Info.plist */,
+			);
+			path = "Allamal QuranUITests";
+			sourceTree = "<group>";
+		};
+		E2C5C7E81E47DC9C00252142 /* Podfile */ = {
+			isa = PBXGroup;
+			children = (
+				E2C5C7E91E47DCB300252142 /* Podfile */,
+			);
+			name = Podfile;
+			sourceTree = "<group>";
+		};
+		E2C5C7EB1E47DD1000252142 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				E2C5C7EC1E47DD4700252142 /* GoogleService-Info.plist */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2C5C7B41E47DBAF00252142 /* Allamal Quran */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2C5C7DF1E47DBAF00252142 /* Build configuration list for PBXNativeTarget "Allamal Quran" */;
+			buildPhases = (
+				ADF834F9547FFB9FD1936CF6 /* [CP] Check Pods Manifest.lock */,
+				E2C5C7B11E47DBAF00252142 /* Sources */,
+				E2C5C7B21E47DBAF00252142 /* Frameworks */,
+				E2C5C7B31E47DBAF00252142 /* Resources */,
+				EFD7B43EA5E8D3459D8CE604 /* [CP] Embed Pods Frameworks */,
+				EA1ACC0D92C8857E6EEEFECA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Allamal Quran";
+			productName = "Allamal Quran";
+			productReference = E2C5C7B51E47DBAF00252142 /* Allamal Quran.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2C5C7CA1E47DBAF00252142 /* Allamal QuranTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2C5C7E21E47DBAF00252142 /* Build configuration list for PBXNativeTarget "Allamal QuranTests" */;
+			buildPhases = (
+				E661A4F5053321758AC58CDF /* [CP] Check Pods Manifest.lock */,
+				E2C5C7C71E47DBAF00252142 /* Sources */,
+				E2C5C7C81E47DBAF00252142 /* Frameworks */,
+				E2C5C7C91E47DBAF00252142 /* Resources */,
+				AECE73A443A519CC37146E62 /* [CP] Embed Pods Frameworks */,
+				BB917465C797EE9607299C6A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2C5C7CD1E47DBAF00252142 /* PBXTargetDependency */,
+			);
+			name = "Allamal QuranTests";
+			productName = "Allamal QuranTests";
+			productReference = E2C5C7CB1E47DBAF00252142 /* Allamal QuranTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2C5C7D51E47DBAF00252142 /* Allamal QuranUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2C5C7E51E47DBAF00252142 /* Build configuration list for PBXNativeTarget "Allamal QuranUITests" */;
+			buildPhases = (
+				90F62FC6E861BFFA53243691 /* [CP] Check Pods Manifest.lock */,
+				E2C5C7D21E47DBAF00252142 /* Sources */,
+				E2C5C7D31E47DBAF00252142 /* Frameworks */,
+				E2C5C7D41E47DBAF00252142 /* Resources */,
+				571DBC271C5220321E7F571C /* [CP] Embed Pods Frameworks */,
+				F58777EBCA1BD1EE6F8D1B1D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2C5C7D81E47DBAF00252142 /* PBXTargetDependency */,
+			);
+			name = "Allamal QuranUITests";
+			productName = "Allamal QuranUITests";
+			productReference = E2C5C7D61E47DBAF00252142 /* Allamal QuranUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2C5C7AD1E47DBAE00252142 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Baabul Ilm";
+				TargetAttributes = {
+					E2C5C7B41E47DBAF00252142 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 26A666LL56;
+						ProvisioningStyle = Automatic;
+					};
+					E2C5C7CA1E47DBAF00252142 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 26A666LL56;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E2C5C7B41E47DBAF00252142;
+					};
+					E2C5C7D51E47DBAF00252142 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 26A666LL56;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E2C5C7B41E47DBAF00252142;
+					};
+				};
+			};
+			buildConfigurationList = E2C5C7B01E47DBAE00252142 /* Build configuration list for PBXProject "Allamal Quran" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2C5C7AC1E47DBAE00252142;
+			productRefGroup = E2C5C7B61E47DBAF00252142 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2C5C7B41E47DBAF00252142 /* Allamal Quran */,
+				E2C5C7CA1E47DBAF00252142 /* Allamal QuranTests */,
+				E2C5C7D51E47DBAF00252142 /* Allamal QuranUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2C5C7B31E47DBAF00252142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2C5C7C51E47DBAF00252142 /* LaunchScreen.storyboard in Resources */,
+				E2C5C7C21E47DBAF00252142 /* Assets.xcassets in Resources */,
+				E2C5C7ED1E47DD4700252142 /* GoogleService-Info.plist in Resources */,
+				E2C5C7EA1E47DCB300252142 /* Podfile in Resources */,
+				E2C5C7C01E47DBAF00252142 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2C5C7C91E47DBAF00252142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2C5C7D41E47DBAF00252142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		571DBC271C5220321E7F571C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Allamal QuranUITests/Pods-Allamal QuranUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90F62FC6E861BFFA53243691 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ADF834F9547FFB9FD1936CF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AECE73A443A519CC37146E62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Allamal QuranTests/Pods-Allamal QuranTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB917465C797EE9607299C6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Allamal QuranTests/Pods-Allamal QuranTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E661A4F5053321758AC58CDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA1ACC0D92C8857E6EEEFECA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Allamal Quran/Pods-Allamal Quran-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFD7B43EA5E8D3459D8CE604 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Allamal Quran/Pods-Allamal Quran-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F58777EBCA1BD1EE6F8D1B1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Allamal QuranUITests/Pods-Allamal QuranUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2C5C7B11E47DBAF00252142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2C5C7BD1E47DBAF00252142 /* SecondViewController.swift in Sources */,
+				E2C5C7B91E47DBAF00252142 /* AppDelegate.swift in Sources */,
+				E2C5C7BB1E47DBAF00252142 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2C5C7C71E47DBAF00252142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2C5C7D01E47DBAF00252142 /* Allamal_QuranTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2C5C7D21E47DBAF00252142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2C5C7DB1E47DBAF00252142 /* Allamal_QuranUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2C5C7CD1E47DBAF00252142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2C5C7B41E47DBAF00252142 /* Allamal Quran */;
+			targetProxy = E2C5C7CC1E47DBAF00252142 /* PBXContainerItemProxy */;
+		};
+		E2C5C7D81E47DBAF00252142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2C5C7B41E47DBAF00252142 /* Allamal Quran */;
+			targetProxy = E2C5C7D71E47DBAF00252142 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2C5C7BE1E47DBAF00252142 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2C5C7BF1E47DBAF00252142 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2C5C7C31E47DBAF00252142 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2C5C7C41E47DBAF00252142 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2C5C7DD1E47DBAF00252142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2C5C7DE1E47DBAF00252142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2C5C7E01E47DBAF00252142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CA3F63F58ADBD6D575034F2 /* Pods-Allamal Quran.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 26A666LL56;
+				INFOPLIST_FILE = "Allamal Quran/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baabulilm.arabic.course.Allamal-Quran";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E2C5C7E11E47DBAF00252142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8D92EC65CFE1786B76E8E3D /* Pods-Allamal Quran.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 26A666LL56;
+				INFOPLIST_FILE = "Allamal Quran/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baabulilm.arabic.course.Allamal-Quran";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E2C5C7E31E47DBAF00252142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5DF7D47E2D9E7C8DB4F3EB2 /* Pods-Allamal QuranTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 26A666LL56;
+				INFOPLIST_FILE = "Allamal QuranTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baabulilm.arabic.course.Allamal-QuranTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Allamal Quran.app/Allamal Quran";
+			};
+			name = Debug;
+		};
+		E2C5C7E41E47DBAF00252142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C103BD66D580455A49C008F1 /* Pods-Allamal QuranTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 26A666LL56;
+				INFOPLIST_FILE = "Allamal QuranTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baabulilm.arabic.course.Allamal-QuranTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Allamal Quran.app/Allamal Quran";
+			};
+			name = Release;
+		};
+		E2C5C7E61E47DBAF00252142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74604E87ED7B183EC30B6ED2 /* Pods-Allamal QuranUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 26A666LL56;
+				INFOPLIST_FILE = "Allamal QuranUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baabulilm.arabic.course.Allamal-QuranUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Allamal Quran";
+			};
+			name = Debug;
+		};
+		E2C5C7E71E47DBAF00252142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD57E099032BA39D514C6D91 /* Pods-Allamal QuranUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 26A666LL56;
+				INFOPLIST_FILE = "Allamal QuranUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baabulilm.arabic.course.Allamal-QuranUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Allamal Quran";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2C5C7B01E47DBAE00252142 /* Build configuration list for PBXProject "Allamal Quran" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2C5C7DD1E47DBAF00252142 /* Debug */,
+				E2C5C7DE1E47DBAF00252142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2C5C7DF1E47DBAF00252142 /* Build configuration list for PBXNativeTarget "Allamal Quran" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2C5C7E01E47DBAF00252142 /* Debug */,
+				E2C5C7E11E47DBAF00252142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2C5C7E21E47DBAF00252142 /* Build configuration list for PBXNativeTarget "Allamal QuranTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2C5C7E31E47DBAF00252142 /* Debug */,
+				E2C5C7E41E47DBAF00252142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2C5C7E51E47DBAF00252142 /* Build configuration list for PBXNativeTarget "Allamal QuranUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2C5C7E61E47DBAF00252142 /* Debug */,
+				E2C5C7E71E47DBAF00252142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2C5C7AD1E47DBAE00252142 /* Project object */;
+}
