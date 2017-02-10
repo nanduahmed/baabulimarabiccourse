@@ -20,6 +20,7 @@
 		E2C5C7DB1E47DBAF00252142 /* Allamal_QuranUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C7DA1E47DBAF00252142 /* Allamal_QuranUITests.swift */; };
 		E2C5C7EA1E47DCB300252142 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E2C5C7E91E47DCB300252142 /* Podfile */; };
 		E2C5C7ED1E47DD4700252142 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2C5C7EC1E47DD4700252142 /* GoogleService-Info.plist */; };
+		E2C5C7F01E4833D400252142 /* AllModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5C7EF1E4833D400252142 /* AllModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		E2C5C7DC1E47DBAF00252142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C5C7E91E47DCB300252142 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		E2C5C7EC1E47DD4700252142 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Firebase/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E2C5C7EF1E4833D400252142 /* AllModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AllModel.swift; path = Model/AllModel.swift; sourceTree = "<group>"; };
 		F5DF7D47E2D9E7C8DB4F3EB2 /* Pods-Allamal QuranTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allamal QuranTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Allamal QuranTests/Pods-Allamal QuranTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F8D92EC65CFE1786B76E8E3D /* Pods-Allamal Quran.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Allamal Quran.release.xcconfig"; path = "Pods/Target Support Files/Pods-Allamal Quran/Pods-Allamal Quran.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +145,7 @@
 		E2C5C7B71E47DBAF00252142 /* Allamal Quran */ = {
 			isa = PBXGroup;
 			children = (
+				E2C5C7EE1E48338B00252142 /* Model */,
 				E2C5C7EB1E47DD1000252142 /* Firebase */,
 				E2C5C7E81E47DC9C00252142 /* Podfile */,
 				E2C5C7B81E47DBAF00252142 /* AppDelegate.swift */,
@@ -188,6 +191,14 @@
 				E2C5C7EC1E47DD4700252142 /* GoogleService-Info.plist */,
 			);
 			name = Firebase;
+			sourceTree = "<group>";
+		};
+		E2C5C7EE1E48338B00252142 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2C5C7EF1E4833D400252142 /* AllModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,6 +490,7 @@
 				E2C5C7BD1E47DBAF00252142 /* SecondViewController.swift in Sources */,
 				E2C5C7B91E47DBAF00252142 /* AppDelegate.swift in Sources */,
 				E2C5C7BB1E47DBAF00252142 /* FirstViewController.swift in Sources */,
+				E2C5C7F01E4833D400252142 /* AllModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

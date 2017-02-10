@@ -8,8 +8,7 @@ target 'Allamal Quran' do
   # Pods for Allamal Quran
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
-
-
+  pod 'Firebase/Database'
 
   target 'Allamal QuranTests' do
     inherit! :search_paths
