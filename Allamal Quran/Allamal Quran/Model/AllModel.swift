@@ -35,22 +35,16 @@ class AllModel {
             let value = snapshot.value as? NSDictionary
             let groups = value?["groups"] as? String ?? ""
             self.getCoursesforGroup(group: groups, completion: { (some) in
+                print("Groups "+groups)
                 self.getAllCourses(completion: { (courses) in
-                    print(courses ?? "")
-                    
                     for values in courses! {
-                        //let aCourse = Course(dictionary: key)
-                        //let aCourseDict = values as? [String:Any]
                         let aCourse = Course(dictionary: values.value as! [String : Any])
                         aCourse.courseID = values.key
                         coursesArray.append(aCourse)
                     }
-                    
-                    
+                    completion(coursesArray)
                 })
             })
-            completion(nil)
-            // ...
         }) { (error) in
             print(error.localizedDescription)
         }
