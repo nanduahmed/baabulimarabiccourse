@@ -22,7 +22,13 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.showSignInFields(value: true)
+        self.populateCredentials()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    private func populateCredentials() {
+        self.emailTextField.text = "nandu.ahmed@gmail.com"
+        self.passwordtextField.text = "Password123"
     }
     
     override func didReceiveMemoryWarning() {
