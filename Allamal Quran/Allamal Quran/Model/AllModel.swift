@@ -10,12 +10,12 @@ import Foundation
 import FirebaseDatabase
 import FirebaseAuth
 
+typealias AQDictionary = [String:Any?]
+
 class Course {
     var courseID:String?
     var courseName:String?
     var courseDesc:String?
-    
-    
     
      init(dictionary:[String:Any]) {
         self.courseID = dictionary["name"] as! String?
@@ -23,9 +23,35 @@ class Course {
     }
 }
 
+class Group {
+    var courses:[Course]?
+    var courseIDs:[String]?
+    
+    var gpName:String?
+    var success = false
+    
+    required init(params:AQDictionary?) {
+        if let values = params {
+            self.success = true
+            self.courses = [Course]()
+            self.courseIDs = [String]()
+            for (key, value) in values {
+                if (value as? Bool == true) {
+                    courseIDs?.append(key)
+                }
+            }
+        }
+    }
+}
+
 class AllModel {
     static let shared = AllModel()
     var ref: FIRDatabaseReference!
+    var currentUser:FIRUser?
+    var groupOfCurrentUser:String?
+    var currentUserGroup:Group?
+    var allCourses:[Course]?
+    
     
     func getCourses(forUser:FIRUser, completion: @escaping (([Course]?) -> ()) )  {
         var coursesArray = [Course]()
@@ -34,15 +60,29 @@ class AllModel {
         ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
             let value = snapshot.value as? NSDictionary
             let groups = value?["groups"] as? String ?? ""
-            self.getCoursesforGroup(group: groups, completion: { (some) in
-                print("Groups "+groups)
+            self.groupOfCurrentUser = groups
+            self.getCoursesforGroup(group: groups, completion: { (coursesOfThisUser) in
+                let group = Group(params: coursesOfThisUser)
+                print(group)
+                self.currentUserGroup = group
+                
                 self.getAllCourses(completion: { (courses) in
-                    for values in courses! {
-                        let aCourse = Course(dictionary: values.value as! [String : Any])
-                        aCourse.courseID = values.key
-                        coursesArray.append(aCourse)
+                    if let userGroupsIds = self.currentUserGroup?.courseIDs {
+                        for courseIds in userGroupsIds {
+                            for values in courses! {
+                                let aCourse = Course(dictionary: values.value as! AQDictionary)
+                                aCourse.courseID = values.key
+                                if (courseIds ==  aCourse.courseID) {
+                                    coursesArray.append(aCourse)
+                                    self.currentUserGroup?.courses?.append(aCourse)
+                                }
+                            }
+                        }
+                        
+                        completion(coursesArray)
+                    } else {
+                        completion(nil)
                     }
-                    completion(coursesArray)
                 })
             })
         }) { (error) in
@@ -53,17 +93,17 @@ class AllModel {
     func getCoursesforGroup(group:String , completion: @escaping ((_ values:[String:Any]?) -> ())) {
         self.ref = FIRDatabase.database().reference()
         ref.child("class-group").child(group).child("courses").observeSingleEvent(of: .value, with: { (snapshot) in
-            let value = snapshot.value as? [String:Any]
+            let value = snapshot.value as? AQDictionary
             completion(value)
         }) { (error) in
             print(error.localizedDescription)
         }
     }
     
-    func getAllCourses(completion: @escaping ((_ values:[String:Any]?) -> ())) {
+    func getAllCourses(completion: @escaping ((_ values:AQDictionary?) -> ())) {
         self.ref = FIRDatabase.database().reference()
         ref.child("courses").observeSingleEvent(of: .value, with: { (snapshot) in
-            let value = snapshot.value as? [String:Any]
+            let value = snapshot.value as? AQDictionary
             completion(value)
         }) { (error) in
             print(error.localizedDescription)
